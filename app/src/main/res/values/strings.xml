@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SuminoLab</string>
+    <string name="video_story_downloader" translatable="false">Reels &amp; Story Downloader\nfor Instagram</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="developer" translatable="false">Sumino</string>
+    <string name="email_feedback" translatable="false">sumitra.devapps@gmail.com</string>
+
+    <string name="message_developer">Have a query or facing an issue with the app?\nFollow us or bookmark our profile to stay updated and contact us directly for support or feedback.\nWe\'re here to help you!</string>
+    <string name="made_in_india">build with ❤️ in India</string>
+    <string name="support">If you have any questions or suggestions about App, do not hesitate to contact me at <b>sumitra.devapps@gmail.com</b></string>
+
+</resources>
