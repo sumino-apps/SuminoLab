@@ -22,15 +22,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="33">
         <activity
-            android:name=".presentation.activity.CrashActivity"
+            android:name=".ui.activity.CrashActivity"
             android:enableOnBackInvokedCallback="true"
             android:exported="false" />
         <activity
-            android:name=".presentation.activity.FeedbackActivity"
+            android:name=".ui.activity.FeedbackActivity"
             android:enableOnBackInvokedCallback="true"
             android:exported="false" />
         <activity
-            android:name=".presentation.activity.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:enableOnBackInvokedCallback="true"
             android:exported="true">
             <intent-filter>

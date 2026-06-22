@@ -6,7 +6,7 @@ import javax.inject.Singleton
 import android.os.Process
 import com.sumino.xyz.MyApplication.Companion.isDebug
 import com.sumino.xyz.data.local.prefs.CrashGuard
-import com.sumino.xyz.presentation.activity.CrashActivity
+import com.sumino.xyz.ui.activity.CrashActivity
 import timber.log.Timber
 import kotlin.system.exitProcess
 
