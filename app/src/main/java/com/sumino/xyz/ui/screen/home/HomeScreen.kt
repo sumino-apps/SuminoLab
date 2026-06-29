@@ -23,8 +23,8 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.annotation.RootGraph
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import com.sumino.xyz.ui.activity.CrashActivity
-import com.sumino.xyz.ui.activity.FeedbackActivity
+import com.sumino.xyz.ui.feature.crash.CrashActivity
+import com.sumino.xyz.ui.feature.feedback.FeedbackActivity
 import com.sumino.xyz.ui.components.update.AppUpdateState
 import com.sumino.xyz.ui.components.update.InAppUpdateCard
 

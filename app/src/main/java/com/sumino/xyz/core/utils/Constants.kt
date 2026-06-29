@@ -1,4 +1,4 @@
-package com.sumino.xyz.utils
+package com.sumino.xyz.core.utils
 
 import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext

@@ -1,4 +1,4 @@
-package com.sumino.xyz.ui.activity
+package com.sumino.xyz.ui.feature.feedback
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

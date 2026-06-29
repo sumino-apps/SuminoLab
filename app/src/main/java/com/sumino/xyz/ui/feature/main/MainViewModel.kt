@@ -1,4 +1,4 @@
-package com.sumino.xyz.ui.activity
+package com.sumino.xyz.ui.feature.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

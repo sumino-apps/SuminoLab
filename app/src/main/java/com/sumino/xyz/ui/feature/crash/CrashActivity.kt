@@ -1,4 +1,4 @@
-package com.sumino.xyz.ui.activity
+package com.sumino.xyz.ui.feature.crash
 
 import android.annotation.SuppressLint
 import android.content.Intent

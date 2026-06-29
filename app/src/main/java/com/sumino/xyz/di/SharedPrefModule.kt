@@ -3,7 +3,7 @@ package com.sumino.xyz.di
 import android.content.Context
 import android.content.SharedPreferences
 import com.sumino.xyz.data.local.prefs.SharedPref
-import com.sumino.xyz.utils.Constants
+import com.sumino.xyz.core.utils.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
