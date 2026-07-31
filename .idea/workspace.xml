@@ -10,6 +10,26 @@
           <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/library/toastly/src/main/res/drawable/toastly_check_circle.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/library/toastly/src/main/res/drawable/toastly_error_circle.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/library/toastly/src/main/res/drawable/toastly_info_circle.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/library/toastly/src/main/res/drawable/toastly_warning_triangle.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
@@ -17,314 +37,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="286d2354-1a9f-43f2-880b-9323aaf792d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/sumino/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sumino/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sumino/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sumino/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sumino/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/keepRules/rules.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/sumino/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/consumer-rules.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/androidTest/java/com/sumino/designsystem/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/DesignSystemPreview.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/guidelines/GridLines.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/guidelines/GuideLinePadding.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/guidelines/VerticalBoxes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/guidelines/VerticalDividers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/preview/DevicePreviews.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/preview/SuminoThemePreview.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Alpha.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/ColorScheme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Dimens.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Elevation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Motion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Shape.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Spacing.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/SuminoLabTheme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/java/com/sumino/designsystem/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/main/keepRules/rules.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/designsystem/src/test/java/com/sumino/designsystem/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/consumer-rules.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/androidTest/java/com/sumino/toastly/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/Toastly.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/model/ToastConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/model/ToastDuration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/model/ToastPosition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/model/ToastStyle.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/model/ToastType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/state/ToastState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/ui/ToastColors.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/ui/ToastIcon.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/ui/ToastLayout.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/java/com/sumino/toastly/ui/ToastObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/keepRules/rules.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/res/drawable/clear_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/res/drawable/tostly_check_circle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/res/drawable/tostly_error_circle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/main/res/drawable/tostly_info_circle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/toastly/src/test/java/com/sumino/toastly/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/androidTest/java/com/sumino/xyz/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/java/com/sumino/xyz/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/keepRules/rules.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/app/src/test/java/com/sumino/xyz/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/gradle/gradle-daemon-jvm.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature-architecture/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/deviceManager.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/dictionaries/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/markdown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/androidTest/java/com/sumino/xyz/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/MyApplication.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/architecture/BaseViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/architecture/MviBase.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/crash/CrashHandler.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/crash/CrashReporter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/crash/DefaultCrashReporter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/dispatchers/DispatcherProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/error/AppResult.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/network/NetworkMonitor.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/utils/Constants.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/core/utils/Utils.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/data/local/database/Converters.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/data/local/datastore/AppPreferencesSerializer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/data/local/datastore/DataStoreManager.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/data/local/models/AppPreferencesData.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/data/local/prefs/CrashGuard.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/data/local/prefs/SharedPref.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/data/utils/EncryptionHelper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/di/ActivityModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/di/AppModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/di/CrashModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/di/SharedPrefModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/AppToolbar.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/ErrorView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/LoadingDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/NetworkStatusBanner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/ProgressDialog.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/ScreenMessage.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/guidelines/GridLines.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/guidelines/GuideLinePadding.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/guidelines/VerticalBoxes.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/guidelines/VerticalDividers.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/update/AppUpdateState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/components/update/InAppUpdateCard.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/feature/crash/CrashActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/feature/feedback/FeedbackActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/feature/main/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/feature/main/MainUiState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/feature/main/MainViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/modifier/ModifierExt.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/navigation/AppNavGraph.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/screen/home/HomeScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/screen/home/HomeViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/screen/onboarding/OnboardingScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/screen/onboarding/OnboardingViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/screen/splash/SplashScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/screen/splash/SplashViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/screen/termsofuse/TermsOfUseScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/theme/SetStatusBarColor.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/java/com/sumino/xyz/ui/utils/ToastUtils.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/drawable/default_splash_logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/values/font_certs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/app/src/test/java/com/sumino/xyz/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/gradle/gradle-daemon-jvm.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/New folder/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/New folder/material-theme.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/New folder/res/values-v23/font_certs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/New folder/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/New folder/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/New folder/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/material-theme.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/res/values-v23/font_certs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layered-architecture/theme/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/androidTest/java/com/sumino/xyz/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/java/com/sumino/xyz/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/java/com/sumino/xyz/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/keepRules/rules.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/app/src/test/java/com/sumino/xyz/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/gradle/gradle-daemon-jvm.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-architecture/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +53,7 @@
       <entry key="_D:/SuminoLab" value="3GbzOeWEkYPuggmVaXBZB0KyBWz" />
     </persistenceIdMap>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\banro\.android\avd\Pixel_7.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=WKAMTGMRVGLZ5HWK]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
