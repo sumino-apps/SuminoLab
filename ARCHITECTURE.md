@@ -63,7 +63,7 @@ SuminoLab/
 │
 ├── core/
 │   └── designsystem/                  # [Multi-Module] Shared M3 Design Tokens & Debug Overlays
-│       ├── theme/                     # SuminoLabTheme, ColorScheme, Spacing, Dimens, Elevation, Motion
+│       ├── theme/                     # SuminoLabTheme, LightColor, DarkColor, Spacing, Dimens, Motion
 │       └── guidelines/                # GridLines, CenterLines, DebugBounds, SafeAreaOverlay, DesignOverlay
 │
 └── app/src/main/java/com/sumino/

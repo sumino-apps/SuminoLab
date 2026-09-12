@@ -103,7 +103,7 @@ class SharedPref @Inject constructor(
         }
     }
 
-    inline fun <reified T> getObject(key: String, defaultValue: T? = null): T? {
+    private inline fun <reified T> getObject(key: String, defaultValue: T? = null): T? {
         val json = preferences.getString(key, null) ?: return defaultValue
         return runCatching {
             gson.fromJson(json, T::class.java)
