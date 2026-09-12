@@ -1,11 +1,14 @@
 package com.sumino.designsystem.guidelines
 
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
@@ -57,5 +60,13 @@ fun GridLines(
                 y += gridSizePx
             }
         }
+    }
+}
+
+@Preview(name = "GridLines", showBackground = true, widthDp = 240, heightDp = 320)
+@Composable
+fun GridLinesPreview() {
+    Box(Modifier.fillMaxSize().background(Color(0xFFECEFF1))) {
+        GridLines(enabled = true)
     }
 }

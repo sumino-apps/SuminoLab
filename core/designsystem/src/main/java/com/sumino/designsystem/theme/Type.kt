@@ -14,47 +14,6 @@ import androidx.compose.ui.unit.sp
  */
 private val systemFontFamily = FontFamily.Default
 
-val Typography = Typography(
-    headlineSmall = TextStyle(
-        fontFamily = systemFontFamily,
-        fontWeight = FontWeight.SemiBold,
-        fontSize = 24.sp,
-        lineHeight = 32.sp,
-        letterSpacing = 0.sp,
-    ),
-    titleLarge = TextStyle(
-        fontFamily = systemFontFamily,
-        fontWeight = FontWeight.SemiBold,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp,
-    ),
-    titleMedium = TextStyle(
-        fontFamily = systemFontFamily,
-        fontWeight = FontWeight.Medium,
-        fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.15.sp,
-    ),
-    bodyLarge = TextStyle(
-        fontFamily = systemFontFamily,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.5.sp,
-    ),
-    bodyMedium = TextStyle(
-        fontFamily = systemFontFamily,
-        fontWeight = FontWeight.Normal,
-        fontSize = 14.sp,
-        lineHeight = 20.sp,
-        letterSpacing = 0.25.sp,
-    ),
-    labelLarge = TextStyle(
-        fontFamily = systemFontFamily,
-        fontWeight = FontWeight.Medium,
-        fontSize = 14.sp,
-        lineHeight = 20.sp,
-        letterSpacing = 0.1.sp,
-    ),
-)
+val baseline = Typography()
+
+val Typography = baseline

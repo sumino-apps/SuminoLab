@@ -14,16 +14,16 @@ pluginManagement {
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
+@Suppress("UnstableApiUsage")
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
+        mavenCentral { url = uri("https://jitpack.io") }
     }
 }
 
 rootProject.name = "SuminoLab"
 include(":app")
-
-include(":library:toastly")
 include(":core:designsystem")

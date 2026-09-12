@@ -1,6 +1,8 @@
 package com.sumino.designsystem.theme
 
 import android.app.Activity
+import android.content.Context
+import android.content.ContextWrapper
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
@@ -11,11 +13,26 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.SideEffect
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
+/**
+ * Single source of truth for whether the active composition is in Dark Mode.
+ */
+val LocalDarkTheme = compositionLocalOf { false }
+
+/**
+ * Safely unwrap Context to find the hosting Activity without ClassCastException.
+ */
+tailrec fun Context.findActivity(): Activity? = when (this) {
+    is Activity -> this
+    is ContextWrapper -> baseContext.findActivity()
+    else -> null
+}
 /**
  * Root theme for every SuminoLab app.
  *
@@ -68,7 +85,7 @@ fun SuminoLabTheme(
         else -> lightColors
     }
 
-    SetSystemBarIcons(darkTheme)
+    SetSystemBarIcons(darkIcons = !darkTheme)
 
     CompositionLocalProvider(
         LocalSpacing provides spacing,
@@ -85,13 +102,58 @@ fun SuminoLabTheme(
     }
 }
 
+/**
+ * Configures status bar and navigation bar icon appearance safely.
+ *
+ * @param darkIcons If true, icons/text are dark (e.g. black, for light backgrounds).
+ *                  If false, icons/text are light (e.g. white, for dark backgrounds).
+ */
 @Composable
-fun SetSystemBarIcons(isDarkIcons: Boolean = isSystemInDarkTheme()) {
+fun SetSystemBarIcons(darkIcons: Boolean = !isSystemInDarkTheme()) {
     val view = LocalView.current
+    if (view.isInEditMode) return
 
     SideEffect {
-        val window = (view.context as Activity).window
-        WindowCompat.getInsetsController(window, view)
-            .isAppearanceLightStatusBars = !isDarkIcons
+        val window = view.context.findActivity()?.window ?: return@SideEffect
+        val insetsController = WindowCompat.getInsetsController(window, view)
+        insetsController.isAppearanceLightStatusBars = darkIcons
+        insetsController.isAppearanceLightNavigationBars = darkIcons
+    }
+}
+
+/**
+ * Convenience helper that forces system bar icons to be white/light for dark/immersive screens
+ * (Camera, PhotoViewer, Crop, Editor, Paywall).
+ */
+@Composable
+fun SetImmersiveDarkScreenSystemBars() {
+    SetSystemBarIcons(darkIcons = false)
+}
+
+/**
+ * Overrides system bar icon appearance temporarily for a specific screen (e.g. Crop, PhotoViewer, Camera)
+ * and safely restores the active app theme state when the screen leaves composition.
+ *
+ * @param isDarkIcons false for light/white icons on dark backgrounds, true for dark icons on light backgrounds.
+ */
+@Composable
+fun SetTransientSystemBarIcons(isDarkIcons: Boolean = isSystemInDarkTheme()) {
+    val view = LocalView.current
+    if (view.isInEditMode) return
+    val isAppDark = LocalDarkTheme.current
+
+    DisposableEffect(isDarkIcons, isAppDark) {
+        val window = view.context.findActivity()?.window
+        val insetsController = window?.let { WindowCompat.getInsetsController(it, view) }
+
+        // Preserves backwards compatibility with callers passing isDarkIcons = true for white icons on dark screens
+        insetsController?.isAppearanceLightStatusBars = !isDarkIcons
+        insetsController?.isAppearanceLightNavigationBars = !isDarkIcons
+
+        onDispose {
+            // Restore to current active app theme without relying on fragile cached previousState
+            insetsController?.isAppearanceLightStatusBars = !isAppDark
+            insetsController?.isAppearanceLightNavigationBars = !isAppDark
+        }
     }
 }

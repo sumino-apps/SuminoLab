@@ -4,25 +4,8 @@ plugins {
 }
 
 android {
+    // SDK, Java 17, and Compose setup are applied from the root build's `subprojects` block.
     namespace = "com.sumino.designsystem"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
-
-    defaultConfig {
-        minSdk = 24
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    buildFeatures {
-        compose = true
-    }
 }
 
 dependencies {
@@ -35,11 +18,13 @@ dependencies {
     api(libs.androidx.compose.ui)
     api(libs.androidx.compose.ui.graphics)
     api(libs.androidx.compose.foundation)
-    api(libs.androidx.compose.animation.core)
+    api(libs.androidx.compose.animation)
     api(libs.androidx.compose.ui.tooling.preview)
 
     // WindowCompat / core view helpers used by SetSystemBarIcons.
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.compose.ui.text.google.fonts)
+    implementation(libs.androidx.compose.material.icons.extended)
 
     // Renders the @Preview annotations in debug builds only.
     debugImplementation(libs.androidx.compose.ui.tooling)
