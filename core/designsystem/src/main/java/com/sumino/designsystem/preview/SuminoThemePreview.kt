@@ -20,7 +20,7 @@ fun SuminoThemePreview(
     darkTheme: Boolean = false,
     content: @Composable () -> Unit,
 ) {
-    SuminoLabTheme(darkTheme = darkTheme) {
+    SuminoLabTheme(isDark = darkTheme) {
         Surface(content = content)
     }
 }

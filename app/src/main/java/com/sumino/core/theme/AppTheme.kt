@@ -53,7 +53,7 @@ fun AppTheme(
         ThemeMode.DARK -> true
         ThemeMode.SYSTEM -> isSystemInDarkTheme()
     }
-    SuminoLabTheme(darkTheme = isDark) {
+    SuminoLabTheme(isDark = isDark) {
         content()
     }
 }

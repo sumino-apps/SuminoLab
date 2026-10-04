@@ -48,7 +48,7 @@ tailrec fun Context.findActivity(): Activity? = when (this) {
  * Material 3 tokens are read via [Theme] (e.g. `Theme.colorScheme`); the extra
  * tokens (spacing/elevation/motion/dimens) via `Theme.spacing` etc.
  *
- * @param darkTheme whether to use the dark color scheme.
+ * @param isDark whether to use the dark color scheme.
  * @param dynamicColor use Android 12+ wallpaper-based colors; when on, it takes
  *   precedence over [lightColors] / [darkColors].
  * @param lightColors color scheme applied in light mode.
@@ -62,7 +62,7 @@ tailrec fun Context.findActivity(): Activity? = when (this) {
  */
 @Composable
 fun SuminoLabTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    isDark: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = false,
     lightColors: ColorScheme = LightColorScheme,
@@ -78,14 +78,14 @@ fun SuminoLabTheme(
     val colorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+            if (isDark) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
 
-        darkTheme -> darkColors
+        isDark -> darkColors
         else -> lightColors
     }
 
-    SetSystemBarIcons(darkIcons = !darkTheme)
+    SetSystemBarIcons(darkIcons = !isDark)
 
     CompositionLocalProvider(
         LocalSpacing provides spacing,

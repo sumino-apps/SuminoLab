@@ -199,7 +199,7 @@ private fun FixedColumn(
 @Preview(name = "Color Roles — Light", showBackground = true, widthDp = 820)
 @Composable
 private fun ColorRolesLightPreview() {
-    SuminoLabTheme(darkTheme = false) {
+    SuminoLabTheme(isDark = false) {
         ColorRolesChart()
     }
 }
@@ -207,7 +207,7 @@ private fun ColorRolesLightPreview() {
 @Preview(name = "Color Roles — Dark", showBackground = true, widthDp = 820)
 @Composable
 private fun ColorRolesDarkPreview() {
-    SuminoLabTheme(darkTheme = true) {
+    SuminoLabTheme(isDark = true) {
         ColorRolesChart()
     }
 }
